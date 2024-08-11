@@ -1,0 +1,19 @@
+spring:
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${BD_HOST:localhost}:${BD_PORT:5433}/${BD_NAME:ekan-bd}
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+

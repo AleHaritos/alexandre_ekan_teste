@@ -1,0 +1,14 @@
+version: '3'
+
+
+services:
+
+  ekan-bd:
+    image: postgres:latest
+    container_name: ekan-bd
+    environment:
+      POSTGRES_DB: ekan-bd
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+        - "5433:5432"
