@@ -3,8 +3,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${BD_HOST:localhost}:${BD_PORT:5433}/${BD_NAME:ekan-bd}
-    username: postgres
-    password: postgres
+    username: ${BD_USER:postgres}
+    password: ${BD_PASSWORD:postgres}
 
   jpa:
     hibernate:
