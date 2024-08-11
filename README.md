@@ -1,0 +1,5 @@
+- O projeto foi feito com Spring Boot 3 e Java 17 SDK corretto-17 e com banco de dados em Postgres.
+- Foi criado um arquivo docker-compose para gerar o banco basta rodar no diretório onde está o arquivo o comando docker compose up -d --build em um terminal e possuir docker na máquina.
+- Outra opção é criar o banco manualmente com as configurações que estão no arquivo application.yml ou usar as variáveis de ambiente presentes no mesmo, para usar um banco já disponível.
+- Parar rodar localmente basta ter a versão de Java compatível, atualizar as dependências e ter o banco de dados conectado.
+- Para verificar endpoints usar o swwager no link http://localhost:8080/swagger-ui.html, está documentado os endpoints e o formato ideal de payload que a requisição espera.
